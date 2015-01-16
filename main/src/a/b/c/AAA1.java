@@ -1,5 +1,7 @@
 package a.b.c;
 
+import java.util.Arrays;
+
 /**
  * Created by user on 13/01/15.
  */
@@ -9,10 +11,20 @@ public class AAA1 extends SuperAAA1{
     float f = 0;
     boolean b;
     static long l;
+    Integer[][][] int_array;
 
    /* public AAA1(long id) {
         super(id);
     }*/
+
+    public AAA1(long id, String sss, double d, float f, boolean b, Integer[][][] int_array) {
+        super(id);
+        this.sss = sss;
+        this.d = d;
+        this.f = f;
+        this.b = b;
+        this.int_array = int_array;
+    }
 
     public AAA1(long id, String sss, double d, float f, boolean b) {
         super(id);
@@ -33,7 +45,8 @@ public class AAA1 extends SuperAAA1{
         if (Double.compare(aaa1.getD(), getD()) != 0) return false;
         if (Float.compare(aaa1.getF(), getF()) != 0) return false;
         if (b != aaa1.b) return false;
-        return !(getSss() != null ? !getSss().equals(aaa1.getSss()) : aaa1.getSss() != null);
+        if (getSss() != null ? !getSss().equals(aaa1.getSss()) : aaa1.getSss() != null) return false;
+        return Arrays.deepEquals(getInt_array(), aaa1.getInt_array());
 
     }
 
@@ -46,7 +59,17 @@ public class AAA1 extends SuperAAA1{
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         result = 31 * result + (getF() != +0.0f ? Float.floatToIntBits(getF()) : 0);
         result = 31 * result + (b ? 1 : 0);
+        result = 31 * result + (getInt_array() != null ? // Probably incorrect - hashCode for high dimension arrays with Arrays.hashCode
+                Arrays.hashCode(getInt_array()) : 0);
         return result;
+    }
+
+    public Integer[][][] getInt_array() {
+        return int_array;
+    }
+
+    public void setInt_array(Integer[][][] int_array) {
+        this.int_array = int_array;
     }
 
     public String getSss() {
