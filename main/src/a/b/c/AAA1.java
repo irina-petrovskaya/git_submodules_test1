@@ -80,7 +80,4 @@ public class AAA1 extends SuperAAA1{
         return f;
     }
 
-
-    //
-    // trunk ch1
 }
