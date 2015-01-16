@@ -13,10 +13,6 @@ public class AAA1 extends SuperAAA1{
     static long l;
     Integer[][][] int_array;
 
-   /* public AAA1(long id) {
-        super(id);
-    }*/
-
     public AAA1(long id, String sss, double d, float f, boolean b, Integer[][][] int_array) {
         super(id);
         this.sss = sss;

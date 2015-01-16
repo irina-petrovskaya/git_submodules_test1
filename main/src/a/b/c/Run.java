@@ -15,7 +15,5 @@ public class Run {
         AAA1 a3 = new AAA1(111,"bbb",2,2,true,i2);
         System.out.println(a1.equals(a2));
         System.out.println(a3.equals(a2));
-
-
     }
 }
