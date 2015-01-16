@@ -14,4 +14,5 @@ public class AAA2 {
     public void setI1(int i1) {
         this.i1 = i1;
     }
+
 }
