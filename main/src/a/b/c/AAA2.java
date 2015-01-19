@@ -38,4 +38,5 @@ public class AAA2 extends SuperAAA1{
                 .append(getI1())
                 .toHashCode();
     }
+    //
 }
