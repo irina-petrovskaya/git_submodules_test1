@@ -1,5 +1,7 @@
 package a.b.c;
 
+import java.util.Objects;
+import org.apache.commons.lang.builder.EqualsBuilder;
 /**
  * Created by user on 14/01/15.
  */
@@ -17,21 +19,23 @@ public class AAA2 extends SuperAAA1{
 
     @Override
     public boolean equals(Object o) {
-       //addEqualsPrologue begin
         if (this == o) return true;
+
         if (!(o instanceof AAA2)) return false;
-        if (!super.equals(o)) return false;
-        //addEqualsPrologue end
+
         AAA2 aaa2 = (AAA2) o;
 
-        return getI1() == aaa2.getI1();
-
+        return new org.apache.commons.lang.builder.EqualsBuilder()
+                .appendSuper(super.equals(o))
+                .append(getI1(), aaa2.getI1())
+                .isEquals();
     }
 
     @Override
     public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + getI1();
-        return result;
+        return new org.apache.commons.lang.builder.HashCodeBuilder(17, 37)
+                .appendSuper(super.hashCode())
+                .append(getI1())
+                .toHashCode();
     }
 }

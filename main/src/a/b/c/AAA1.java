@@ -5,6 +5,7 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Created by user on 13/01/15.
@@ -34,6 +35,26 @@ public class AAA1 extends SuperAAA1{
         this.d = d;
         this.f = f;
         this.b = b;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof AAA1)) return false;
+        if (!super.equals(o)) return false;
+
+        AAA1 aaa1 = (AAA1) o;
+
+        return Arrays.deepEquals(getInt_array(), aaa1.getInt_array());
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + (getInt_array() != null ? // Probably incorrect - hashCode for high dimension arrays with Arrays.hashCode
+                Arrays.hashCode(getInt_array()) : 0);
+        return result;
     }
 
     public static long getL() {
