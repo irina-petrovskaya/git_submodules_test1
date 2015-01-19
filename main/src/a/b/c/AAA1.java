@@ -1,14 +1,13 @@
 package a.b.c;
 
-import org.apache.commons.lang.builder.EqualsBuilder;
-import org.apache.commons.lang.builder.HashCodeBuilder;
+
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
 /**
- * Created by user on 13/01/15.
+ * Created by me on 13/01/15.
  */
 public class AAA1 extends SuperAAA1{
     static long l;
