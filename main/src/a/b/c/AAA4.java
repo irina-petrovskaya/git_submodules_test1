@@ -6,8 +6,5 @@ package a.b.c;
  * Project: git_submodules_test1
  * *******************************
  */
-public class AAA3 {
-
-    //qqqqq
-    //4
+public class AAA4 {
 }
