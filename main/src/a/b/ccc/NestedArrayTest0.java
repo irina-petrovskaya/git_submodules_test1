@@ -1,4 +1,4 @@
-package a.b.c;
+package a.b.ccc;
 
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
