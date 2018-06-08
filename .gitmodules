@@ -5,3 +5,6 @@
 	path = git_submodule2
 	url = https://github.com/irina-petrovskaya/git_submodule2
 
+[submodule "git_submodule3"]
+	path = git_submodule3
+	url = https://github.com/irina-petrovskaya/git_submodule3.git
