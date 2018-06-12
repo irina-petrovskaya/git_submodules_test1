@@ -12,5 +12,6 @@ public class AAA4 {
 // clone2
 // clone1
 // clone2
+// clone1
 
 }
