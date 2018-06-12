@@ -3,7 +3,7 @@
    by Irina.Petrovskaya on 1/19/2015.
    Shared on github
    branch: master
-//clone2
-//clone1
+**clone2
+**clone1
 
    =============================================================================================
