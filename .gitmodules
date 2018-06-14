@@ -8,3 +8,9 @@
 [submodule "git_submodule3"]
 	path = git_submodule3
 	url = https://github.com/irina-petrovskaya/git_submodule3.git
+[submodule "sumodule4/r11"]
+	path = r11
+	url = https://github.com/jb-tester/r11.git
+[submodule "submodule5/r12"]
+	path = submodule5/r12
+	url = https://github.com/jb-tester/r12.git
