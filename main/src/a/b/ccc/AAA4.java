@@ -2,7 +2,7 @@ package a.b.ccc;
 
 /**
  * *******************************
- * Created by Irina.Petrovskaya on 1/19/2015.
+ * Created by irina on 1/19/2015.
  * Project: git_submodules_test1
  * *******************************
  */

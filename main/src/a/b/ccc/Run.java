@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * *******************************
- * Created by Irina.Petrovskaya on 1/16/2015.
+ * Created by irina on 1/16/2015.
  * Project: git_submodules_test1
  * *******************************
  */
